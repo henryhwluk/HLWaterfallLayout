@@ -17,11 +17,11 @@
 		B8CB70831E00E63500DC972F /* HLWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CB70821E00E63500DC972F /* HLWaterfallLayout.m */; };
 		B8CB70861E010A8600DC972F /* HLImages.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CB70851E010A8600DC972F /* HLImages.m */; };
 		B8CB708D1E010F0900DC972F /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8CB708C1E010F0800DC972F /* 1.plist */; };
-		B8CB708F1E01104100DC972F /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8CB708E1E01104100DC972F /* placeholder.jpg */; };
 		B8CB70931E011AEA00DC972F /* HLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CB70911E011AEA00DC972F /* HLCollectionViewCell.m */; };
 		B8CB70941E011AEA00DC972F /* HLCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8CB70921E011AEA00DC972F /* HLCollectionViewCell.xib */; };
-		B8CB70991E011E7C00DC972F /* pwgroupdelete.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CB70981E011E7C00DC972F /* pwgroupdelete.png */; };
 		B8CB709F1E011F3200DC972F /* HLAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CB709E1E011F3200DC972F /* HLAnimation.m */; };
+		B8CB70A21E01255400DC972F /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8CB70A01E01255400DC972F /* placeholder.jpg */; };
+		B8CB70A31E01255400DC972F /* pwgroupdelete.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CB70A11E01255400DC972F /* pwgroupdelete.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,13 +43,13 @@
 		B8CB70841E010A8600DC972F /* HLImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLImages.h; sourceTree = "<group>"; };
 		B8CB70851E010A8600DC972F /* HLImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLImages.m; sourceTree = "<group>"; };
 		B8CB708C1E010F0800DC972F /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
-		B8CB708E1E01104100DC972F /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
 		B8CB70901E011AEA00DC972F /* HLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLCollectionViewCell.h; sourceTree = "<group>"; };
 		B8CB70911E011AEA00DC972F /* HLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLCollectionViewCell.m; sourceTree = "<group>"; };
 		B8CB70921E011AEA00DC972F /* HLCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLCollectionViewCell.xib; sourceTree = "<group>"; };
-		B8CB70981E011E7C00DC972F /* pwgroupdelete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pwgroupdelete.png; sourceTree = "<group>"; };
 		B8CB709D1E011F3200DC972F /* HLAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLAnimation.h; sourceTree = "<group>"; };
 		B8CB709E1E011F3200DC972F /* HLAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLAnimation.m; sourceTree = "<group>"; };
+		B8CB70A01E01255400DC972F /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
+		B8CB70A11E01255400DC972F /* pwgroupdelete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pwgroupdelete.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +103,6 @@
 				B8CB70721E00E50A00DC972F /* Main.storyboard */,
 				B8CB70751E00E50A00DC972F /* Assets.xcassets */,
 				B8CB70771E00E50A00DC972F /* LaunchScreen.storyboard */,
-				B8CB708E1E01104100DC972F /* placeholder.jpg */,
-				B8CB70981E011E7C00DC972F /* pwgroupdelete.png */,
 				B8CB707A1E00E50A00DC972F /* Info.plist */,
 				B8CB708C1E010F0800DC972F /* 1.plist */,
 				B8CB70691E00E50A00DC972F /* Supporting Files */,
@@ -130,6 +128,8 @@
 				B8CB70921E011AEA00DC972F /* HLCollectionViewCell.xib */,
 				B8CB709D1E011F3200DC972F /* HLAnimation.h */,
 				B8CB709E1E011F3200DC972F /* HLAnimation.m */,
+				B8CB70A01E01255400DC972F /* placeholder.jpg */,
+				B8CB70A11E01255400DC972F /* pwgroupdelete.png */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -204,12 +204,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8CB708D1E010F0900DC972F /* 1.plist in Resources */,
-				B8CB708F1E01104100DC972F /* placeholder.jpg in Resources */,
-				B8CB70991E011E7C00DC972F /* pwgroupdelete.png in Resources */,
+				B8CB70A21E01255400DC972F /* placeholder.jpg in Resources */,
 				B8CB70791E00E50A00DC972F /* LaunchScreen.storyboard in Resources */,
 				B8CB70941E011AEA00DC972F /* HLCollectionViewCell.xib in Resources */,
 				B8CB70761E00E50A00DC972F /* Assets.xcassets in Resources */,
 				B8CB70741E00E50A00DC972F /* Main.storyboard in Resources */,
+				B8CB70A31E01255400DC972F /* pwgroupdelete.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
