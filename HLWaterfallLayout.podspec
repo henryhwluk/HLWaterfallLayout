@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "HLWaterfallLayout"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "a simple waterfall flow layout with 12 Animation"
 
   s.homepage     = "https://github.com/henvyluk/HLWaterfallLayout"
@@ -17,8 +17,15 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/henvyluk/HLWaterfallLayout.git", :tag => s.version }
 
   s.source_files  = "HLWaterfallLayout/**/*.{h,m}"
-  
-  s.resources = "Assets"
+
+  s.resources = "HLWaterfallLayout/Assets"
+  s.resource_bundles = {
+    'HLWaterfallLayout' => ['Assets/*.png']
+  }  
+
+  s.framework = 'UIKit'  
+
+  s.dependency "SDWebImage", "~> 3.7.5"
 
   s.requires_arc = true
 
