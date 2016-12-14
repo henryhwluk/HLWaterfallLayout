@@ -14,6 +14,9 @@
 		B8CB70761E00E50A00DC972F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8CB70751E00E50A00DC972F /* Assets.xcassets */; };
 		B8CB70791E00E50A00DC972F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CB70771E00E50A00DC972F /* LaunchScreen.storyboard */; };
 		B8CB70831E00E63500DC972F /* HLWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CB70821E00E63500DC972F /* HLWaterfallLayout.m */; };
+		B8CB70861E010A8600DC972F /* HLImages.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CB70851E010A8600DC972F /* HLImages.m */; };
+		B8CB708A1E010B3400DC972F /* HLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CB70881E010B3400DC972F /* HLCollectionViewCell.m */; };
+		B8CB708B1E010B3400DC972F /* HLCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8CB70891E010B3400DC972F /* HLCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,11 @@
 		B8CB707A1E00E50A00DC972F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8CB70811E00E63500DC972F /* HLWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLWaterfallLayout.h; sourceTree = "<group>"; };
 		B8CB70821E00E63500DC972F /* HLWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLWaterfallLayout.m; sourceTree = "<group>"; };
+		B8CB70841E010A8600DC972F /* HLImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLImages.h; sourceTree = "<group>"; };
+		B8CB70851E010A8600DC972F /* HLImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLImages.m; sourceTree = "<group>"; };
+		B8CB70871E010B3400DC972F /* HLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLCollectionViewCell.h; sourceTree = "<group>"; };
+		B8CB70881E010B3400DC972F /* HLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLCollectionViewCell.m; sourceTree = "<group>"; };
+		B8CB70891E010B3400DC972F /* HLCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,11 @@
 				B8CB70771E00E50A00DC972F /* LaunchScreen.storyboard */,
 				B8CB707A1E00E50A00DC972F /* Info.plist */,
 				B8CB70691E00E50A00DC972F /* Supporting Files */,
+				B8CB70841E010A8600DC972F /* HLImages.h */,
+				B8CB70851E010A8600DC972F /* HLImages.m */,
+				B8CB70871E010B3400DC972F /* HLCollectionViewCell.h */,
+				B8CB70881E010B3400DC972F /* HLCollectionViewCell.m */,
+				B8CB70891E010B3400DC972F /* HLCollectionViewCell.xib */,
 			);
 			path = HLWaterfallLayout;
 			sourceTree = "<group>";
@@ -149,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8CB708B1E010B3400DC972F /* HLCollectionViewCell.xib in Resources */,
 				B8CB70791E00E50A00DC972F /* LaunchScreen.storyboard in Resources */,
 				B8CB70761E00E50A00DC972F /* Assets.xcassets in Resources */,
 				B8CB70741E00E50A00DC972F /* Main.storyboard in Resources */,
@@ -164,6 +178,8 @@
 			files = (
 				B8CB70711E00E50A00DC972F /* ViewController.m in Sources */,
 				B8CB706E1E00E50A00DC972F /* AppDelegate.m in Sources */,
+				B8CB708A1E010B3400DC972F /* HLCollectionViewCell.m in Sources */,
+				B8CB70861E010A8600DC972F /* HLImages.m in Sources */,
 				B8CB70831E00E63500DC972F /* HLWaterfallLayout.m in Sources */,
 				B8CB706B1E00E50A00DC972F /* main.m in Sources */,
 			);
