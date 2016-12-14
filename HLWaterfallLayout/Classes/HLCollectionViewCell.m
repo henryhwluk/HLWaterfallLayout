@@ -7,7 +7,7 @@
 //
 
 #import "HLCollectionViewCell.h"
-#import <UIImageView+WebCache.h>
+#import "UIImageView+WebCache.h"
 #import "HLAnimation.h"
 @interface HLCollectionViewCell()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
