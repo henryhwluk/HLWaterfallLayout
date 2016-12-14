@@ -16,20 +16,37 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="emI-86-n33">
                         <rect key="frame" x="0.0" y="0.0" width="110" height="195"/>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nd-yH-Amz">
+                        <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="07d-ki-Ej9"/>
+                            <constraint firstAttribute="height" constant="25" id="cyQ-JQ-hZo"/>
+                        </constraints>
+                        <state key="normal" image="pwgroupdelete.png"/>
+                        <connections>
+                            <action selector="deleteBtnAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="YdD-wa-3B1"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="emI-86-n33" secondAttribute="trailing" id="2MY-Rk-ZO9"/>
+                <constraint firstItem="7nd-yH-Amz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GYy-sa-Mxz"/>
                 <constraint firstAttribute="bottom" secondItem="emI-86-n33" secondAttribute="bottom" id="H5l-4o-t8p"/>
                 <constraint firstItem="emI-86-n33" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XDT-sM-Za4"/>
+                <constraint firstItem="7nd-yH-Amz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Yd1-ZM-Kxo"/>
                 <constraint firstItem="emI-86-n33" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fFn-Fy-mAK"/>
             </constraints>
             <size key="customSize" width="110" height="195"/>
             <connections>
+                <outlet property="deleteBtn" destination="7nd-yH-Amz" id="do4-iX-Ypj"/>
                 <outlet property="imageView" destination="emI-86-n33" id="Bph-ZP-Gfb"/>
             </connections>
             <point key="canvasLocation" x="310" y="250.5"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="pwgroupdelete.png" width="1024" height="1024"/>
+    </resources>
 </document>

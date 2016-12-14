@@ -7,12 +7,17 @@
 //
 
 #import "ViewController.h"
-#import "HLCollectionViewCell.h"
 #import "HLWaterfallLayout.h"
 #import "HLImages.h"
-@interface ViewController ()<UICollectionViewDataSource, HLWaterfallLayoutDelegate>
+#import "HLAnimation.h"
+#import "HLCollectionViewCell.h"
+
+@interface ViewController ()<UICollectionViewDataSource, HLWaterfallLayoutDelegate,HLCollectionViewCellDelegate,UICollectionViewDelegate>
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) NSMutableArray<HLImages *> *images;
+@property (nonatomic, assign) BOOL deleteBtnFlag;
+@property (nonatomic, assign) BOOL vibrateAniFlag;
+@property (nonatomic, assign) BOOL cellDeleteBtnFlag;
 @end
 
 @implementation ViewController
@@ -60,8 +65,13 @@
     self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:waterfall];
     self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerNib:[UINib nibWithNibName:@"HLCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"cell"];
+//    [self.collectionView registerClass:[HLCell class] forCellWithReuseIdentifier:@"cell"];
     self.collectionView.dataSource = self;
+    self.collectionView.delegate = self;
     [self.view addSubview:self.collectionView];
+    
+    _deleteBtnFlag = NO;
+    _vibrateAniFlag = NO;
 }
 
 - (void)click {
@@ -84,7 +94,58 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     HLCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     cell.imageURL = self.images[indexPath.item].imageURL;
+    
+    [self setCellVibrate:cell IndexPath:indexPath];
+
     return cell;
+}
+- (void)setCellVibrate:(HLCollectionViewCell *)cell IndexPath:(NSIndexPath *)indexPath{
+    if (_deleteBtnFlag) {
+        _cellDeleteBtnFlag = YES;
+    }
+    cell.indexPath = indexPath;
+    cell.deleteBtn.hidden = _cellDeleteBtnFlag ? NO : YES;
+    if (_vibrateAniFlag) {
+        [HLAnimation vibrateAnimation:cell];
+    }else{
+        [cell.layer removeAnimationForKey:@"shake"];
+    }
+    cell.delegate = self;
+}
+-(void)deleteCellAtIndexpath:(NSIndexPath *)indexPath cellView:(HLCollectionViewCell *)cell
+{
+    [self.collectionView performBatchUpdates:^{
+        //delete the cell you selected
+        [self.collectionView deleteItemsAtIndexPaths:@[indexPath]];
+        [_images removeObjectAtIndex:indexPath.row];
+        
+    } completion:^(BOOL finished) {
+        [self.collectionView reloadData];
+    }];
+}
+
+- (void)showAllDeleteBtn{
+    _deleteBtnFlag = YES;
+    _vibrateAniFlag = YES;
+    [self.collectionView reloadData];
+    
+}
+- (void)hideAllDeleteBtn{
+    _deleteBtnFlag = NO;
+    _vibrateAniFlag = NO;
+    _cellDeleteBtnFlag = NO;
+    [self.collectionView reloadData];
+}
+
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    return YES;
+}
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (_vibrateAniFlag) {
+        [self hideAllDeleteBtn];
+        return;
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
