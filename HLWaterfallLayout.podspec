@@ -16,12 +16,9 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/henvyluk/HLWaterfallLayout.git", :tag => s.version }
 
-  s.source_files  = "HLWaterfallLayout/**/*.{h,m}"
+  s.source_files  = "HLWaterfallLayout/**/*.{h,m,xib}"
 
-  s.resources = "HLWaterfallLayout/Assets"
-  s.resource_bundles = {
-    'HLWaterfallLayout' => ['Assets/*.png']
-  }  
+  s.resources = "HLWaterfallLayout/Assets/*.png"
 
   s.framework = 'UIKit'  
 
