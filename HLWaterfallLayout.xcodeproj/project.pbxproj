@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B37C42C1CD504656F6B1825E /* libPods-HLWaterfallLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 456FEF77A5927EDDE52EDA78 /* libPods-HLWaterfallLayout.a */; };
 		B8CB706B1E00E50A00DC972F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CB706A1E00E50A00DC972F /* main.m */; };
 		B8CB706E1E00E50A00DC972F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CB706D1E00E50A00DC972F /* AppDelegate.m */; };
 		B8CB70711E00E50A00DC972F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CB70701E00E50A00DC972F /* ViewController.m */; };
@@ -17,9 +18,14 @@
 		B8CB70861E010A8600DC972F /* HLImages.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CB70851E010A8600DC972F /* HLImages.m */; };
 		B8CB708A1E010B3400DC972F /* HLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CB70881E010B3400DC972F /* HLCollectionViewCell.m */; };
 		B8CB708B1E010B3400DC972F /* HLCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8CB70891E010B3400DC972F /* HLCollectionViewCell.xib */; };
+		B8CB708D1E010F0900DC972F /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8CB708C1E010F0800DC972F /* 1.plist */; };
+		B8CB708F1E01104100DC972F /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8CB708E1E01104100DC972F /* placeholder.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		456FEF77A5927EDDE52EDA78 /* libPods-HLWaterfallLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HLWaterfallLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72281C09C9CE164B45F74EB1 /* Pods-HLWaterfallLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLWaterfallLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HLWaterfallLayout/Pods-HLWaterfallLayout.debug.xcconfig"; sourceTree = "<group>"; };
+		7C2E605B01679ED2215F4661 /* Pods-HLWaterfallLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLWaterfallLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-HLWaterfallLayout/Pods-HLWaterfallLayout.release.xcconfig"; sourceTree = "<group>"; };
 		B8CB70661E00E50A00DC972F /* HLWaterfallLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLWaterfallLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CB706A1E00E50A00DC972F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8CB706C1E00E50A00DC972F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,6 +43,8 @@
 		B8CB70871E010B3400DC972F /* HLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLCollectionViewCell.h; sourceTree = "<group>"; };
 		B8CB70881E010B3400DC972F /* HLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLCollectionViewCell.m; sourceTree = "<group>"; };
 		B8CB70891E010B3400DC972F /* HLCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLCollectionViewCell.xib; sourceTree = "<group>"; };
+		B8CB708C1E010F0800DC972F /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		B8CB708E1E01104100DC972F /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,17 +52,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B37C42C1CD504656F6B1825E /* libPods-HLWaterfallLayout.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C9A0905D0814AFD71746F46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				456FEF77A5927EDDE52EDA78 /* libPods-HLWaterfallLayout.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B8CB705D1E00E50A00DC972F = {
 			isa = PBXGroup;
 			children = (
 				B8CB70681E00E50A00DC972F /* HLWaterfallLayout */,
 				B8CB70671E00E50A00DC972F /* Products */,
+				F1ADB9C58008326F7932DDCB /* Pods */,
+				1C9A0905D0814AFD71746F46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,16 +93,18 @@
 				B8CB706D1E00E50A00DC972F /* AppDelegate.m */,
 				B8CB706F1E00E50A00DC972F /* ViewController.h */,
 				B8CB70701E00E50A00DC972F /* ViewController.m */,
-				B8CB70721E00E50A00DC972F /* Main.storyboard */,
-				B8CB70751E00E50A00DC972F /* Assets.xcassets */,
-				B8CB70771E00E50A00DC972F /* LaunchScreen.storyboard */,
-				B8CB707A1E00E50A00DC972F /* Info.plist */,
-				B8CB70691E00E50A00DC972F /* Supporting Files */,
 				B8CB70841E010A8600DC972F /* HLImages.h */,
 				B8CB70851E010A8600DC972F /* HLImages.m */,
 				B8CB70871E010B3400DC972F /* HLCollectionViewCell.h */,
 				B8CB70881E010B3400DC972F /* HLCollectionViewCell.m */,
 				B8CB70891E010B3400DC972F /* HLCollectionViewCell.xib */,
+				B8CB70721E00E50A00DC972F /* Main.storyboard */,
+				B8CB70751E00E50A00DC972F /* Assets.xcassets */,
+				B8CB70771E00E50A00DC972F /* LaunchScreen.storyboard */,
+				B8CB708E1E01104100DC972F /* placeholder.jpg */,
+				B8CB707A1E00E50A00DC972F /* Info.plist */,
+				B8CB708C1E010F0800DC972F /* 1.plist */,
+				B8CB70691E00E50A00DC972F /* Supporting Files */,
 			);
 			path = HLWaterfallLayout;
 			sourceTree = "<group>";
@@ -105,6 +126,15 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		F1ADB9C58008326F7932DDCB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72281C09C9CE164B45F74EB1 /* Pods-HLWaterfallLayout.debug.xcconfig */,
+				7C2E605B01679ED2215F4661 /* Pods-HLWaterfallLayout.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8CB707D1E00E50A00DC972F /* Build configuration list for PBXNativeTarget "HLWaterfallLayout" */;
 			buildPhases = (
+				60AD899536C3547EF33A7160 /* [CP] Check Pods Manifest.lock */,
 				B8CB70621E00E50A00DC972F /* Sources */,
 				B8CB70631E00E50A00DC972F /* Frameworks */,
 				B8CB70641E00E50A00DC972F /* Resources */,
+				71ED604293CD257B5CAC476E /* [CP] Embed Pods Frameworks */,
+				147D7E151ED9703C5D2C0235 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,6 +195,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8CB708D1E010F0900DC972F /* 1.plist in Resources */,
+				B8CB708F1E01104100DC972F /* placeholder.jpg in Resources */,
 				B8CB708B1E010B3400DC972F /* HLCollectionViewCell.xib in Resources */,
 				B8CB70791E00E50A00DC972F /* LaunchScreen.storyboard in Resources */,
 				B8CB70761E00E50A00DC972F /* Assets.xcassets in Resources */,
@@ -170,6 +205,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		147D7E151ED9703C5D2C0235 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HLWaterfallLayout/Pods-HLWaterfallLayout-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60AD899536C3547EF33A7160 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71ED604293CD257B5CAC476E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HLWaterfallLayout/Pods-HLWaterfallLayout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B8CB70621E00E50A00DC972F /* Sources */ = {
@@ -293,6 +376,7 @@
 		};
 		B8CB707E1E00E50A00DC972F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72281C09C9CE164B45F74EB1 /* Pods-HLWaterfallLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HLWaterfallLayout/Info.plist;
@@ -304,6 +388,7 @@
 		};
 		B8CB707F1E00E50A00DC972F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C2E605B01679ED2215F4661 /* Pods-HLWaterfallLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HLWaterfallLayout/Info.plist;

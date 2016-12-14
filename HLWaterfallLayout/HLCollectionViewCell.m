@@ -7,6 +7,8 @@
 //
 
 #import "HLCollectionViewCell.h"
+#import <UIImageView+WebCache.h>
+
 @interface HLCollectionViewCell()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
@@ -19,6 +21,6 @@
 }
 - (void)setImageURL:(NSURL *)imageURL {
     _imageURL = imageURL;
-    //[self.imageView sd_setImageWithURL:imageURL placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    [self.imageView sd_setImageWithURL:imageURL placeholderImage:[UIImage imageNamed:@"placeholder.jpg"]];
 }
 @end

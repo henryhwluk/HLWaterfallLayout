@@ -59,7 +59,7 @@
     //创建collectionView
     self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:waterfall];
     self.collectionView.backgroundColor = [UIColor whiteColor];
-    [self.collectionView registerNib:[UINib nibWithNibName:@"XRCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"cell"];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"HLCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"cell"];
     self.collectionView.dataSource = self;
     [self.view addSubview:self.collectionView];
 }
