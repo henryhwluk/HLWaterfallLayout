@@ -77,10 +77,12 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "HLWaterfallLayout/HLWaterfallLayout/Assets/HLCollectionViewCell.xib"
   install_resource "HLWaterfallLayout/HLWaterfallLayout/Assets/placeholder.png"
   install_resource "HLWaterfallLayout/HLWaterfallLayout/Assets/pwgroupdelete.png"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "HLWaterfallLayout/HLWaterfallLayout/Assets/HLCollectionViewCell.xib"
   install_resource "HLWaterfallLayout/HLWaterfallLayout/Assets/placeholder.png"
   install_resource "HLWaterfallLayout/HLWaterfallLayout/Assets/pwgroupdelete.png"
 fi

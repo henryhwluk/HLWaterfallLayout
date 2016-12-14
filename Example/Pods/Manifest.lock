@@ -1,18 +1,18 @@
 PODS:
-  - HLWaterfallLayout (1.0.5):
+  - HLWaterfallLayout (1.1.0):
     - SDWebImage (~> 3.7.6)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
 
 DEPENDENCIES:
-  - HLWaterfallLayout (~> 1.0.5)
+  - HLWaterfallLayout (~> 1.1.0)
   - SDWebImage (~> 3.7.5)
 
 SPEC CHECKSUMS:
-  HLWaterfallLayout: fdf7f37ca256e549470434db81699268790c66e8
+  HLWaterfallLayout: fccc39301f7f8e977141ddd02222def549c934ff
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
 
-PODFILE CHECKSUM: 53bbca894cba40b7bb7753e9db6a8d227e289542
+PODFILE CHECKSUM: 9f6a53b61bf0e93a8905af2160a8d8b4959f33ff
 
 COCOAPODS: 1.2.0.beta.1

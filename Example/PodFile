@@ -1,7 +1,7 @@
 platform :ios, "7.0"
 target :HLWaterfallLayout do
    pod 'SDWebImage', '~> 3.7.5'
-   pod ‘HLWaterfallLayout’, ‘~> 1.0.5’
+   pod ‘HLWaterfallLayout’, ‘~> 1.1.0’
 
 
 end

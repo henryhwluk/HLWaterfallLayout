@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "HLWaterfallLayout"
-  s.version      = "1.0.6"
+  s.version      = "1.1.0"
   s.summary      = "a simple waterfall flow layout with 12 Animation"
 
   s.homepage     = "https://github.com/henvyluk/HLWaterfallLayout"
